@@ -12,10 +12,10 @@ public class UserConfig {
     public static final String cityId = "0101";//默认上海
 
     //站点id
-    public static final String stationId = "";
+    public static final String stationId = "59e5bfb6916edf4f0c8c979f";
 
     //收货地址id
-    public static final String addressId = "";
+    public static final String addressId = "625aa7151604f700019e4442";
 
     /**
      * 确认收货地址id和站点id
@@ -32,23 +32,25 @@ public class UserConfig {
         Map<String, String> headers = new HashMap<>();
         headers.put("ddmc-city-number", cityId);
         headers.put("ddmc-time", String.valueOf(new Date().getTime() / 1000));
-        headers.put("ddmc-build-version", "2.83.0");
+        headers.put("ddmc-build-version", "2.85.3");
         headers.put("ddmc-station-id", stationId);
         headers.put("ddmc-channel", "applet");
         headers.put("ddmc-os-version", "[object Undefined]");
         headers.put("ddmc-app-client-id", "4");
         headers.put("ddmc-ip", "");
-        headers.put("ddmc-api-version", "9.50.0");
+        headers.put("ddmc-api-version", "9.50.2");
+        headers.put("ddmc-sdkversion", "2.13.2");
         headers.put("accept-encoding", "gzip,compress,br,deflate");
-        headers.put("referer", "https://servicewechat.com/wx1e113254eda17715/425/page-frame.html");
+        headers.put("referer", " https://servicewechat.com/wx1e113254eda17715/436/page-frame.html");
 
         // ------------  填入以下6项 上面不要动 ------------
-        headers.put("ddmc-device-id", "");
-        headers.put("cookie", "");
-        headers.put("ddmc-longitude", "");
-        headers.put("ddmc-latitude", "");
-        headers.put("ddmc-uid", "");
-        headers.put("user-agent", "");
+        headers.put("ddmc-device-id", "osP8I0ZFlfA2QMrJQIlxq3VBqf6A");
+        headers.put("cookie", "DDXQSESSID=d771e407944bc233afc1e2825c44633e");
+        headers.put("ddmc-longitude", "121.654052");
+        headers.put("ddmc-latitude", "31.210174");
+        headers.put("ddmc-uid", "5fabb6abc79ba5000148a86b");
+        headers.put("user-agent", "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.20(0x1800142d) NetType/WIFI Language/zh_CN");
+
         return headers;
     }
 
@@ -75,8 +77,8 @@ public class UserConfig {
 
         // ------------  填入这3项上面不要动 ------------
         body.put("s_id", "");
-        body.put("openid", "");
-        body.put("device_token", "");
+        body.put("openid", "osP8I0ZFlfA2QMrJQIlxq3VBqf6A");
+        body.put("device_token", "WHJMrwNw1k%2FF0qdLNvE01AaZcJRv61RbLQHNu%2BYSNv%2B%2F5%2FVEozfG8p94oDVaZid%2BVCdUCaPVNTd%2BORarSXXiwiMBOMGZxI8DhdCW1tldyDzmauSxIJm5Txg%3D%3D1487582755342");
         return body;
     }
 }

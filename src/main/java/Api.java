@@ -155,6 +155,8 @@ public class Api {
             System.out.println("获取可用的收货地址条数：" + validAddress.size());
             for (int i = 0; i < validAddress.size(); i++) {
                 JSONObject address = validAddress.getJSONObject(i);
+                System.out.println(address);
+                System.out.println("站点id"+address.getStr("station_id")+"-->地址id"+address.getJSONObject("location").getStr("id"));
                 if (address.getBool("is_default")) {
                     JSONObject stationInfo = address.getJSONObject("station_info");
 
